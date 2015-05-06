@@ -4,5 +4,13 @@
     <string name="app_name">Fancy VVZ</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Einstellungen</string>
+    <string name="portfolio">Portfolio</string>
+    <string name="assistent">Assistent</string>
+    <string name="import_csv">Import CSV</string>
+    <string name="new_LV">Neue Lehrveranstaltung</string>
+    <string name="paste">Paste</string>
+    <string name="fileExplorer">Import with File Explorer</string>
+    <string name="infoPaste">Enter a csv string to add a new course to your portfolio</string>
+    <string name="infoExplorer">Select a csv file from your device to add a new course to your portfolio</string>
 
 </resources>
