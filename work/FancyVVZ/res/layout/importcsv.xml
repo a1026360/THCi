@@ -17,7 +17,7 @@
             android:id="@+id/textViewText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
+            android:text="@string/import_csv"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <Button
@@ -41,62 +41,60 @@
             android:gravity="center_vertical|center_horizontal" />
 
         <Button
-            android:id="@+id/buttonSettings"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/buttonDownText"
-            android:layout_alignParentRight="true"
-            android:background="@android:color/black"
-            android:drawableTop="@android:drawable/btn_plus"
-            android:gravity="center_vertical|center_horizontal" />
-
-        <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/buttonPaste"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:drawableLeft="@drawable/ic_launcher"
-            android:ems="10" >
+            android:layout_below="@+id/editTextCSV"
+            android:background="@android:color/black"
+            android:text="@string/paste"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/ButtonFileExplorer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonH"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="84dp"
+            android:background="@android:color/black"
+            android:text="@string/fileExplorer"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/editTextCSV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textViewText"
+            android:layout_marginTop="96dp"
+            android:ems="10"
+            android:inputType="textMultiLine" >
 
             <requestFocus />
         </EditText>
 
-        <ImageView
-            android:id="@+id/imageViewText"
+        <TextView
+            android:id="@+id/textInfoPaste"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:src="@android:drawable/btn_plus" />
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextCSV"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/imageViewText"
-            android:layout_marginTop="45dp"
-            android:ems="10"
-            android:inputType="textMultiLine" />
+            android:layout_marginBottom="54dp"
+            android:text="@string/infoPaste"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
 
-        <Button
-            android:id="@+id/button1"
+        <TextView
+            android:id="@+id/textInfoExplorer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imageViewText"
-            android:layout_centerHorizontal="true"
-            android:background="@android:color/black"
-            android:text="@string/app_name"
-            android:textColor="@android:color/white" />
-    </RelativeLayout>
+            android:layout_above="@+id/ButtonFileExplorer"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="16dp"
+            android:text="@string/infoExplorer"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
 
-    <ViewFlipper
-        android:id="@+id/viewflipper"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" >
-        
-    </ViewFlipper>
+    </RelativeLayout>
 
 </RelativeLayout>
