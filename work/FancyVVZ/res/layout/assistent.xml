@@ -1,8 +1,66 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
 
-</LinearLayout>
+    <Button
+        android:id="@+id/buttonGotoInput"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/buttonGotoFieldofStudy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="154dp"
+        android:background="@drawable/button"
+        android:text="@string/new_LV"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textViewAssistentLVInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonGotoFieldofStudy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:text="@string/assistent_ImportInfo"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/buttonGotoFieldofStudy"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/button"
+        android:text="@string/import_csv"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textViewAssistentInportInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonGotoInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:text="@string/assistent_LVInfo"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:text="@string/portfolio"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/ButtonBacktoPortfolio"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/down"
+        android:gravity="center_vertical|center_horizontal" />
+
+</RelativeLayout>
