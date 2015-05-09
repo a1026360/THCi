@@ -50,7 +50,7 @@
         android:layout_height="50dp"
         android:layout_above="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/down"
+        android:background="@drawable/up"
         android:gravity="center_vertical|center_horizontal" />
 
     <TextView
@@ -67,10 +67,10 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/ButtonBacktoPortfolio"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="30dp"
-        android:text="@string/portfolio"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:text="@string/cancel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

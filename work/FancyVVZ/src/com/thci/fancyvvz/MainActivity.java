@@ -10,7 +10,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // set content. JR
-        
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.portfolio);
     }
 }
