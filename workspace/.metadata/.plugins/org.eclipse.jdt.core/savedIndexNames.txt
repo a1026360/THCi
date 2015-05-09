@@ -1,4 +1,0 @@
-INDEX VERSION 1.127+C:\Users\Christian\Dropbox\Wirtschaftsinformatik\SS2015_HCI_HumanComputerIntaraction\fancyVVZ\THCi\workspace\.metadata\.plugins\org.eclipse.jdt.core
-3977320799.index
-1874988064.index
-1164555884.index
