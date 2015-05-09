@@ -18,7 +18,7 @@
         android:layout_height="50dp"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/left"
+        android:background="@drawable/up"
         android:gravity="center_vertical|center_horizontal" />
 
     <TextView
