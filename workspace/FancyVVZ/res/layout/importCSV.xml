@@ -50,17 +50,6 @@
             android:text="@string/paste"
             android:textColor="@android:color/white" />
 
-        <Button
-            android:id="@+id/ButtonFileExplorer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/buttonH"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="84dp"
-            android:background="@android:color/black"
-            android:text="@string/fileExplorer"
-            android:textColor="@android:color/white" />
-
         <EditText
             android:id="@+id/editTextCSV"
             android:layout_width="wrap_content"
@@ -75,13 +64,24 @@
             <requestFocus />
         </EditText>
 
+        <Button
+            android:id="@+id/ButtonFileExplorer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/buttonH"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="55dp"
+            android:background="@android:color/black"
+            android:text="@string/fileExplorer"
+            android:textColor="@android:color/white" />
+
         <TextView
             android:id="@+id/textInfoPaste"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/editTextCSV"
             android:layout_alignParentLeft="true"
-            android:layout_marginBottom="54dp"
+            android:layout_below="@+id/textViewText"
+            android:layout_marginTop="37dp"
             android:text="@string/infoPaste"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
@@ -91,7 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_above="@+id/ButtonFileExplorer"
             android:layout_alignParentLeft="true"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="20dp"
             android:text="@string/infoExplorer"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
