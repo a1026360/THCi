@@ -1,3 +1,0 @@
-INDEX VERSION 1.127+C:\Users\Christian\Documents\HCI_Project\THCi\work\.metadata\.plugins\org.eclipse.jdt.core
-1015331805.index
-1356559761.index
