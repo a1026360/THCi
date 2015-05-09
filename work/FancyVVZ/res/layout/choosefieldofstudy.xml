@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageViewFieldOfStudy"
         android:layout_centerHorizontal="true"
-        android:text="@string/portfolio"
+        android:text="@string/cancel"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
@@ -46,7 +46,7 @@
         android:layout_height="50dp"
         android:layout_above="@+id/textViewFieldOfStudy"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/down"
+        android:background="@drawable/up"
         android:gravity="center_vertical|center_horizontal" />
 
 </RelativeLayout>

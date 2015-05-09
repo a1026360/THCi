@@ -37,7 +37,7 @@
         android:layout_height="50dp"
         android:layout_alignBottom="@+id/imageViewFieldOfStudy"
         android:layout_alignLeft="@+id/imageViewFieldOfStudy"
-        android:background="@drawable/down"
+        android:background="@drawable/up"
         android:gravity="center_vertical|center_horizontal" />
 
     <TextView
@@ -47,7 +47,27 @@
         android:layout_alignBaseline="@+id/buttonDownFieldOfStudy"
         android:layout_alignBottom="@+id/buttonDownFieldOfStudy"
         android:layout_toRightOf="@+id/buttonDownFieldOfStudy"
-        android:text="@string/portfolio"
+        android:text="@string/cancel"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewFieldOfStudyFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewFieldOfStudy"
+        android:layout_alignBottom="@+id/textViewFieldOfStudy"
+        android:layout_alignRight="@+id/imageViewFieldOfStudy"
+        android:text="@string/save"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonDownFieldOfStudyFin"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/textViewFieldOfStudyFin"
+        android:layout_alignBottom="@+id/textViewFieldOfStudyFin"
+        android:layout_toLeftOf="@+id/textViewFieldOfStudyFin"
+        android:background="@drawable/down"
+        android:gravity="center_vertical|center_horizontal" />
 
 </RelativeLayout>
