@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.thci.fancyvvz.ChooseFieldOfStudy" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:drawableLeft="@drawable/search"
+        android:ems="10"
+        android:hint="Datenbanksysteme" />
+
+    <ImageView
+        android:id="@+id/imageViewFieldOfStudy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_centerVertical="true"
+        android:contentDescription="image"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:src="@drawable/lvs" />
+
+    <Button
+        android:id="@+id/buttonDownFieldOfStudy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/imageViewFieldOfStudy"
+        android:layout_alignLeft="@+id/imageViewFieldOfStudy"
+        android:background="@drawable/down"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:id="@+id/textViewFieldOfStudy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonDownFieldOfStudy"
+        android:layout_alignBottom="@+id/buttonDownFieldOfStudy"
+        android:layout_toRightOf="@+id/buttonDownFieldOfStudy"
+        android:text="@string/portfolio"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
