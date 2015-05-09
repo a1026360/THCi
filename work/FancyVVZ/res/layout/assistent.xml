@@ -44,16 +44,6 @@
         android:text="@string/assistent_LVInfo"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="17dp"
-        android:text="@string/portfolio"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
-
     <Button
         android:id="@+id/ButtonBacktoPortfolio"
         android:layout_width="50dp"
@@ -62,5 +52,25 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/down"
         android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:id="@+id/textViewAssistent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewAssistentLVInfo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/assistent"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ButtonBacktoPortfolio"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="@string/portfolio"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </RelativeLayout>

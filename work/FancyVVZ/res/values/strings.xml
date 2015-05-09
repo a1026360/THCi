@@ -14,5 +14,7 @@
     <string name="infoExplorer">Select a csv file from your device to add a new course to your portfolio</string>
     <string name="assistent_ImportInfo">Import a csv file or paste a string in csv-style.</string>
     <string name="assistent_LVInfo">Find a new course  from university calendar.</string>
+    <string name="calendar">Calendar</string>
+    <string name="confirmation">Congratulation,\n\nyou added one ore several courses to your portfolio!\n=)</string>
 
 </resources>
