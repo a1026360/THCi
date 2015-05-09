@@ -18,7 +18,7 @@
         android:layout_alignParentTop="true"
         android:drawableLeft="@drawable/search"
         android:ems="10"
-        android:hint="Informatik" />
+        android:hint="Datenbanksysteme" />
 
     <ImageView
         android:id="@+id/imageViewFieldOfStudy"
@@ -29,24 +29,25 @@
         android:contentDescription="image"
         android:paddingLeft="0dp"
         android:paddingRight="0dp"
-        android:src="@drawable/fieldofstudy" />
-
-    <TextView
-        android:id="@+id/textViewFieldOfStudy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageViewFieldOfStudy"
-        android:layout_centerHorizontal="true"
-        android:text="@string/portfolio"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:src="@drawable/lvs" />
 
     <Button
         android:id="@+id/buttonDownFieldOfStudy"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_above="@+id/textViewFieldOfStudy"
-        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/imageViewFieldOfStudy"
+        android:layout_alignLeft="@+id/imageViewFieldOfStudy"
         android:background="@drawable/down"
         android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:id="@+id/textViewFieldOfStudy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonDownFieldOfStudy"
+        android:layout_alignBottom="@+id/buttonDownFieldOfStudy"
+        android:layout_toRightOf="@+id/buttonDownFieldOfStudy"
+        android:text="@string/portfolio"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>
