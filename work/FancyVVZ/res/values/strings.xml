@@ -12,11 +12,11 @@
     <string name="cancel">Back</string>
     <string name="save">Save</string>
     <string name="fileExplorer">Import with File Explorer</string>
-    <string name="infoPaste">Enter a csv string to add a new course to your portfolio</string>
-    <string name="infoExplorer">Select a csv file from your device to add a new course to your portfolio</string>
+    <string name="infoPaste">Enter a csv string to add new courses</string>
+    <string name="infoExplorer">Select a csv file from your device to add courses</string>
     <string name="assistent_ImportInfo">Import a csv file or paste a string in csv-style.</string>
     <string name="assistent_LVInfo">Find a new course  from university calendar.</string>
     <string name="calendar">Calendar</string>
-    <string name="confirmation">Congratulation,\n\nyou added one ore several courses to your portfolio!\n=)</string>
+    <string name="confirmation">Congratulation,\n\nthe courses are now available in your portfolio!\n=)</string>
 
 </resources>

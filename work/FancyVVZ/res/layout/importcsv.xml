@@ -9,10 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.fancyvvz.hci.dup.MainActivity" >
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
         <TextView
             android:id="@+id/textViewText"
             android:layout_width="wrap_content"
@@ -21,80 +17,95 @@
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <Button
-            android:id="@+id/buttonDownText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/buttonDownImportBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:background="@android:color/black"
-            android:drawableLeft="@android:drawable/btn_plus"
+            android:background="@drawable/up"
             android:gravity="center_vertical|center_horizontal" />
 
-        <Button
-            android:id="@+id/buttonH"
+        <TextView
+            android:id="@+id/textViewImportBack"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:layout_alignBaseline="@+id/buttonDownImportBack"
+            android:layout_alignBottom="@+id/buttonDownImportBack"
+            android:layout_alignRight="@+id/textViewText"
+            android:text="@string/cancel"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textViewImportSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/buttonImportSave"
+            android:layout_alignBottom="@+id/buttonImportSave"
             android:layout_alignParentRight="true"
-            android:background="@android:color/black"
-            android:drawableBottom="@android:drawable/btn_minus"
+            android:text="@string/save"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/buttonImportSave"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/textViewImportSave"
+            android:background="@drawable/down"
             android:gravity="center_vertical|center_horizontal" />
 
         <Button
             android:id="@+id/buttonPaste"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
             android:layout_below="@+id/editTextCSV"
-            android:background="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/button"
             android:text="@string/paste"
             android:textColor="@android:color/white" />
-
-        <Button
-            android:id="@+id/ButtonFileExplorer"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/buttonH"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="84dp"
-            android:background="@android:color/black"
-            android:text="@string/fileExplorer"
-            android:textColor="@android:color/white" />
-
-        <EditText
-            android:id="@+id/editTextCSV"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentRight="true"
-            android:layout_below="@+id/textViewText"
-            android:layout_marginTop="96dp"
-            android:ems="10"
-            android:inputType="textMultiLine" >
-
-            <requestFocus />
-        </EditText>
 
         <TextView
             android:id="@+id/textInfoPaste"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/editTextCSV"
-            android:layout_alignParentLeft="true"
-            android:layout_marginBottom="54dp"
+            android:layout_below="@+id/textViewText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="34dp"
+            android:gravity="center_horizontal"
             android:text="@string/infoPaste"
             android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/editTextCSV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textInfoPaste"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
 
         <TextView
             android:id="@+id/textInfoExplorer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/ButtonFileExplorer"
-            android:layout_alignParentLeft="true"
-            android:layout_marginBottom="16dp"
+            android:layout_alignLeft="@+id/buttonDownImportBack"
+            android:layout_below="@+id/buttonPaste"
+            android:layout_marginTop="64dp"
+            android:gravity="center_horizontal"
             android:text="@string/infoExplorer"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
-    </RelativeLayout>
+        <Button
+            android:id="@+id/ButtonFileExplorer"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textInfoExplorer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button"
+            android:text="@string/fileExplorer"
+            android:textColor="@android:color/white" />
 
 </RelativeLayout>
