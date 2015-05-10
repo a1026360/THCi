@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/viewflipper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+
+    <ImageView
+        android:id="@+id/imageViewPortfolio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonCalendar"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewText"
+        android:paddingRight="0dp"
+        android:src="@drawable/portfolio" />
+
+    <Button
+        android:id="@+id/buttonCalendar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/right"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:id="@+id/textViewAssistantBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonDownText"
+        android:layout_alignBottom="@+id/buttonDownText"
+        android:layout_toRightOf="@+id/buttonDownText"
+        android:text="New Course"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/textViewText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/portfolio"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/buttonH"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/buttonCalendar"
+        android:layout_alignTop="@+id/textViewText"
+        android:background="@drawable/settings"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonCalendar"
+        android:layout_alignBottom="@+id/buttonCalendar"
+        android:layout_toLeftOf="@+id/buttonCalendar"
+        android:text="Calendar"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/buttonDownText"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/TextView01"
+        android:layout_alignBottom="@+id/TextView01"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/down"
+        android:gravity="center_vertical|center_horizontal" />
+
+</RelativeLayout>
+
+    <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/buttonGotoInput"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/buttonGotoFieldofStudy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="154dp"
+        android:background="@drawable/button"
+        android:text="@string/new_LV"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textViewAssistentLVInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonGotoFieldofStudy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:text="@string/assistent_ImportInfo"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/buttonGotoFieldofStudy"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/button"
+        android:text="@string/import_csv"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textViewAssistentInportInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/buttonGotoInput"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="57dp"
+        android:text="@string/assistent_LVInfo"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/ButtonBacktoPortfolio"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textViewAssistantButtonBack"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/up"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:id="@+id/textViewAssistent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewAssistentLVInfo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/assistent"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/textViewAssistantButtonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:text="@string/cancel"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
+
+</ViewFlipper>
